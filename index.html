@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Told Ya So</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
@@ -12,6 +12,39 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <div class="row container">
+        <div class="col-12 box title">
+          <h1>Told Ya So!</h1>
+          <p>You have predictions, we have a forum!</p>
+        </div>
+        <div class="col-6 box signUp">
+          <input name="credentials[email]" type="text" placeholder="Email">
+            <input name="credentials[password]"type="password" placeholder="Password">
+            <input name="credentials[password_confirmation]" type="password"
+            placeholder="Confirm Password">
+            <button id="signUpButton" type="submit">Sign Up!</button>
+        </div>
+        <div class="col-6 box signIn">
+          <input placeholder="Email" name="credentials[email]"type="text">
+            <input placeholder="Password" name="credentials[password]" type="password">
+            <button id="signInButton" type="submit">Sign In!</button>
+        </div>
+        <div class="col-6 box signOut">
+          <button type="submit">Sign Out</button>
+        </div>
+        <div class="col-6 box changePassword">
+          <input placeholder="Old Password" name="passwords[old]"type="password">
+            <input placeholder="New Password" name="passwords[new]" type="password">
+            <button id="changePasswordButton" type="submit">Change Password</button>
+        </div>
+        <div class="col-12 box post">
+            <button id="newPost" type="submit">New Post</button>
+        </div>
+        <div class="col-12 box postContainer">
+          <input id="postTitle" placeholder="title" name="post[title]"type="text">
+            <textarea id="postContent" placeholder="content...." name="post[content]"></textarea>
+            <button id="newPostButton" type="submit">Submit</button>
+        </div>
+      </div>
     </body>
 </html>

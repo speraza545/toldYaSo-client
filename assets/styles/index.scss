@@ -1,1 +1,60 @@
 @import '~bootstrap/scss/bootstrap';
+@import './variables';
+
+body {
+  background-color: $background-color;
+}
+
+.box {
+  align-items: center;
+  background-color: $titleAndBottomColor;
+  border: 1px solid black;
+  color: $textColor;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.container{
+  font-family: $siteFont;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  display: grid;
+  padding-top: 10px;
+}
+
+.signUp {
+  display: grid;
+}
+.signIn {
+  display: grid;
+}
+
+.changePassword {
+  display: grid;
+}
+
+.postContainer {
+  display: grid;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#postTitle {
+  height: 40%;
+  width: 100%;
+}
+
+#postContent {
+  height: 100%;
+  width: 100%;
+}
+
+#newPostButton {
+  padding-top: 0px;
+}
