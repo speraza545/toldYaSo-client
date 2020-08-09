@@ -1,7 +1,7 @@
 const store = require('../store')
 
 const signUpSuccess = function(){
-  $('#message').text('Successfully signed up!')
+  $('#message').text('Signed up!')
   $('#signUp').trigger('reset')
 }
 
@@ -11,7 +11,7 @@ const signUpFailure = function(){
 
 const signInSuccess = function(response){
   store.user = response.user
-  $('#message').text('Successfully signed in!')
+  $('#message').text('Signed in!')
   $('form').trigger('reset')
   $('.authenticated').show()
   $('.unauthenticated').hide()
