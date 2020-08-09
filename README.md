@@ -20,14 +20,14 @@ Some of it ended up being too complicated with the reduced timeframe I had to wo
 Once that was done, I went ahead over to the client application and fleshed out a super basic structure with all the input fields and buttons I needed for testing to ensure things worked appropriately. Once that finished, I then moved on to dealing with making the site look better with html and css.
 
 # other links
-[wireframe-client](https://imgur.com/a/9MS3NGE)
-[user stories](https://imgur.com/a/CJXrm6F)
-[ERD](https://imgur.com/a/WGuOzlP)
+[wireframe-client](https://imgur.com/a/9MS3NGE)  \
+[user stories](https://imgur.com/a/CJXrm6F)  \
+[ERD](https://imgur.com/a/WGuOzlP)  
 
 # deployed clients
-[api](https://git.heroku.com/toldyaso.git)
+[api](https://git.heroku.com/toldyaso.git)  \
 [client](skmidk.github.io/toldyaso-client/)
 
 # repos
-[api](https://github.com/skmidk/ToldYaSo)
+[api](https://github.com/skmidk/ToldYaSo)  \
 [client](https://github.com/skmidk/toldYaSo-client)
