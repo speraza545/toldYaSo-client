@@ -37,7 +37,9 @@
           </form>
         </div>
         <div class="col-6 box signOut">
-          <button id="signOutButton" type="submit">Sign Out</button>
+          <form id="signOut">
+            <button id="signOutButton" type="submit">Sign Out</button>
+          </form>
         </div>
         <div class="col-6 box changePassword">
           <form id="changePassword">
@@ -47,17 +49,19 @@
           </form>
         </div>
         <div class="col-12 box post">
-            <button id="newPostButton" type="submit">New Post</button>
+          <form id="seePosts">
+            <button id="seePostsButton" type="submit">See posts</button>
+          </form>
         </div>
         <div class="col-12 box postContainer">
           <form id="newPost">
-            <input id="postTitle" placeholder="title" name="post[title]"type="text">
-            <textarea id="postContent" placeholder="content...." name="post[content]"></textarea>
+            <input placeholder="title" name="post[title]" type="text">
+            <input placeholder="content" name="post[content]" type="text"></textarea>
             <button id="newPostButtonSubmit" type="submit">Submit</button>
           </form>
         </div>
-        <div id="HomePageFeed">
-
+        <div>
+          <p id="homePageFeed"></p>
         </div>
       </div>
     </body>

@@ -1,0 +1,13 @@
+{{#each post as |post|}}
+  {{log post}}
+  <section data-id="{{post.id}}">
+    <h6>Title:</h6>
+    <h3>
+      {{limit post.title 15}}
+    </h3>
+    <h6>content:</h6>
+    <p>
+        {{post.content}}
+    </p>
+  </section>
+{{/each}}
