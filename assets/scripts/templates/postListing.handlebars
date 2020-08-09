@@ -1,13 +1,17 @@
 {{#each post as |post|}}
-  {{log post}}
-  <section data-id="{{post.id}}">
+  <section class="unathenticated feed" data-id="{{post._id}}">
     <h6>Title:</h6>
     <h3>
-      {{limit post.title 15}}
+      {{limit post.title 40}}
     </h3>
     <h6>content:</h6>
     <p>
         {{post.content}}
     </p>
+    <h6>ID:</h6>
+    <p>
+      {{post._id}}
+    </p>
+    {{> deletePartial}}
   </section>
 {{/each}}

@@ -20,8 +20,8 @@
         <div class="col-12 box messages">
           <p id="message"></p>
         </div>
-        <div class="col-6 box signUp">
-          <form id="signUp">
+        <div class="col-6 box signUp unauthenticated">
+          <form id="signUp unatheticated">
             <input name="credentials[email]" type="text" placeholder="Email">
             <input name="credentials[password]"type="password" placeholder="Password">
             <input name="credentials[password_confirmation]" type="password"
@@ -29,39 +29,42 @@
             <button id="signUpButton" type="submit">Sign Up!</button>
           </form>
         </div>
-        <div class="col-6 box signIn">
+        <div class="col-6 box signIn unauthenticated">
           <form id="signIn">
           <input placeholder="Email" name="credentials[email]"type="text">
             <input placeholder="Password" name="credentials[password]" type="password">
             <button id="signInButton" type="submit">Sign In!</button>
           </form>
         </div>
-        <div class="col-6 box signOut">
-          <form id="signOut">
-            <button id="signOutButton" type="submit">Sign Out</button>
-          </form>
-        </div>
-        <div class="col-6 box changePassword">
+        <div class="col-6 box changePassword authenticated">
           <form id="changePassword">
             <input placeholder="Old Password" name="passwords[old]"type="password">
             <input placeholder="New Password" name="passwords[new]" type="password">
             <button id="changePasswordButton" type="submit">Change Password</button>
           </form>
+          <form id="signOut">
+            <button id="signOutButton" type="submit">Sign Out</button>
+          </form>
         </div>
-        <div class="col-12 box post">
+        <div class="col-6 box post authenticated">
+          <form id="newPost">
+            <input placeholder="title" name="post[title]" type="text">
+            <input placeholder="content" name="post[content]" type="text"></textarea>
+            <button id="newPostButtonSubmit" type="submit">Submit Post</button>
+          </form>
           <form id="seePosts">
             <button id="seePostsButton" type="submit">See posts</button>
           </form>
         </div>
-        <div class="col-12 box postContainer">
-          <form id="newPost">
+        <div class="col-12 box authenticated update">
+          <form id="updatePost">
+            <input placeholder="post id" name="post[id]" type="text">
             <input placeholder="title" name="post[title]" type="text">
-            <input placeholder="content" name="post[content]" type="text"></textarea>
-            <button id="newPostButtonSubmit" type="submit">Submit</button>
+            <input placeholder="content" name="post[content]" type="text">
+            <button id="updatePostButton" type="submit">Update Post</button>
           </form>
         </div>
-        <div>
-          <p id="homePageFeed"></p>
+        <div id="homePage" class="col-12 homePage">
         </div>
       </div>
     </body>

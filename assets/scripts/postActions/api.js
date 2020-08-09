@@ -25,9 +25,35 @@ const store = require('../store')
       }
     })
   }
+  const deletePost = (postId) => {
+    return $.ajax({
+      url: config.apiUrl + '/posts/'+ postId,
+      method: 'DELETE',
+      headers:{
+        Authorization: 'Bearer ' + store.user.token
+      }
+    })
+  }
 
+  const updatePost = (formData) => {
+    return $.ajax({
+      url: config.apiUrl + '/posts/'+ formData.post.id,
+      method: 'PATCH',
+      headers:{
+        Authorization: 'Bearer ' + store.user.token
+      },
+      data: {
+        post:{
+            title: formData.post.title,
+            content: formData.post.content
+        }
+      }
+    })
+  }
 
   module.exports = {
     homePage,
-    newPost
+    newPost,
+    deletePost,
+    updatePost
   }

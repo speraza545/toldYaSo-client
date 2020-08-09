@@ -2,9 +2,8 @@
 const showPostsTemplate = require('../templates/postListing.handlebars')
 
 const homePageSuccess = (data) => {
-  console.log(data)
   const showPostsHtml = showPostsTemplate({ post: data.post })
-  $('#homePageFeed').append(showPostsHtml)
+  $('.homePage').append(showPostsHtml)
   $('#message').text('Homepage Loaded')
 }
 const homePageFailure = function(response) {
@@ -13,14 +12,38 @@ const homePageFailure = function(response) {
 
 const newPostSuccess = function(response) {
   $('#message').text("Posting Successful")
+  $('#homePage').empty()
 }
 
 const newPostFailure = function(response) {
   $('#message').text("Posting Failed")
 }
 
+const deletePostSuccess = function() {
+  $('#message').text("Post Deleted")
+  $('#homePage').empty()
+}
+
+const deletePostFailure = function() {
+  $('#message').text("Post Failed to Delete")
+}
+
+const updatePostSuccess = function() {
+  $('#message').text("Post Updated")
+  $('#homePage').empty()
+}
+
+const updatePostFailure = function() {
+  $('#message').text("Post Failed to Update")
+}
+
 module.exports = {
   homePageSuccess,
+  homePageFailure,
   newPostSuccess,
-  newPostFailure
+  newPostFailure,
+  deletePostSuccess,
+  deletePostFailure,
+  updatePostSuccess,
+  updatePostFailure
 }

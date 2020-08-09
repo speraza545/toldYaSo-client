@@ -9,7 +9,7 @@ body {
   align-items: center;
   background-color: $titleAndBottomColor;
   border: 1px solid black;
-  color: $textColor;
+  color: $titleTextColor;
   display: flex;
   height: 150px;
   justify-content: center;
@@ -36,25 +36,20 @@ body {
 .changePassword {
   display: grid;
 }
-
-.postContainer {
+.post {
   display: grid;
-  height: 300px;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
 }
 
-#postTitle {
-  height: 40%;
-  width: 100%;
+.messages {
+  height: 70px;
+  font-size: 40px;
 }
 
-#postContent {
-  height: 100%;
-  width: 100%;
+.feed {
+  color: $feedFont;
+  font-family: $siteFont;
 }
 
-#newPostButton {
-  padding-top: 0px;
+.update {
+  height:70px;
 }
