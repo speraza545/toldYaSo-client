@@ -33,6 +33,7 @@ const deletePostFailure = function() {
 const updatePostSuccess = function() {
   $('#message').text("Post Updated")
   $('#homePage').empty()
+  $('form').trigger('reset')
 }
 
 const updatePostFailure = function() {
