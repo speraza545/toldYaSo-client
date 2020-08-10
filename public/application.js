@@ -4130,7 +4130,7 @@ module.exports = getFormFields;
 
 var apiUrl = void 0;
 var apiUrls = {
-  production: 'https://git.heroku.com/toldyaso.git',
+  production: 'https://toldyaso.herokuapp.com',
   development: 'http://localhost:4741'
 };
 
@@ -17464,10 +17464,11 @@ var homePageFailure = function homePageFailure(response) {
 var newPostSuccess = function newPostSuccess(response) {
   $('#message').text("Posting Successful");
   $('#homePage').empty();
+  $('form').trigger('reset');
 };
 
 var newPostFailure = function newPostFailure(response) {
-  $('#message').text("Posting Failed");
+  $('#updatePost').text("Posting Failed");
 };
 
 var deletePostSuccess = function deletePostSuccess() {
