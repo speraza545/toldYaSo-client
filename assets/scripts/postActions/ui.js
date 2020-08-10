@@ -14,10 +14,11 @@ const homePageFailure = function(response) {
 const newPostSuccess = function(response) {
   $('#message').text("Posting Successful")
   $('#homePage').empty()
+  $('form').trigger('reset')
 }
 
 const newPostFailure = function(response) {
-  $('#message').text("Posting Failed")
+  $('#updatePost').text("Posting Failed")
 }
 
 const deletePostSuccess = function() {
