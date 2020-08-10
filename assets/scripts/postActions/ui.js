@@ -2,6 +2,7 @@
 const showPostsTemplate = require('../templates/postListing.handlebars')
 
 const homePageSuccess = (data) => {
+  $('.homePage').empty()
   const showPostsHtml = showPostsTemplate({ post: data.post })
   $('.homePage').append(showPostsHtml)
   $('#message').text('Homepage Loaded')
