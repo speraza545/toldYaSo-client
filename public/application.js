@@ -17363,7 +17363,6 @@ var onUpdatePost = function onUpdatePost(event) {
   event.preventDefault();
   var form = event.target;
   var formData = getFormFields(form);
-  console.log(formData);
   api.updatePost(formData).then(ui.updatePostSuccess).catch(ui.updatePostFailure);
 };
 module.exports = {
@@ -17483,6 +17482,7 @@ var deletePostFailure = function deletePostFailure() {
 var updatePostSuccess = function updatePostSuccess() {
   $('#message').text("Post Updated");
   $('#homePage').empty();
+  $('form').trigger('reset');
 };
 
 var updatePostFailure = function updatePostFailure() {
