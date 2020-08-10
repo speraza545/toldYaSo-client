@@ -27,7 +27,6 @@ const onUpdatePost = (event) => {
   event.preventDefault()
   const form = event.target
   const formData = getFormFields(form)
-  console.log(formData)
   api.updatePost(formData)
     .then(ui.updatePostSuccess)
     .catch(ui.updatePostFailure)
