@@ -31,3 +31,9 @@ Once that was done, I went ahead over to the client application and fleshed out 
 # repos
 [api](https://github.com/skmidk/ToldYaSo)  \
 [client](https://github.com/skmidk/toldYaSo-client)
+
+# user stories
+As a user I want to be able to post my predictions so I can get feedback.
+As a user I want to be able to change my predictions if I find new information.
+As a user I want to be able to delete my predictions if I changed my mind about it.
+As a user I want to be able to see everyones predictions so I be exposed to new ideas.
