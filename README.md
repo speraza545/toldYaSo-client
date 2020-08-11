@@ -25,7 +25,7 @@ Once that was done, I went ahead over to the client application and fleshed out 
 [ERD](https://imgur.com/a/WGuOzlP)  
 
 # deployed clients
-[api](https://git.heroku.com/toldyaso.git)  \
+[api](https://toldyaso.herokuapp.com)  \
 [client](skmidk.github.io/toldyaso-client/)
 
 # repos
