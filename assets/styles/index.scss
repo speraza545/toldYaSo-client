@@ -1,0 +1,63 @@
+@import '~bootstrap/scss/bootstrap';
+@import './variables';
+
+body {
+  background-image: url('https://www.free-largeimages.com/wp-content/uploads/2014/11/Wood_texture-5.jpg');
+}
+
+.box {
+  align-items: center;
+  background-image: url('https://i.imgur.com/oCSJG0O.png');
+  border: 1px solid black;
+  color: $titleTextColor;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+}
+
+.container{
+  font-family: $siteFont;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: $titleFont;
+  text-align: center;
+  display: grid;
+  padding-top: 10px;
+}
+
+.signUp {
+  display: grid;
+}
+.signIn {
+  display: grid;
+}
+
+.changePassword {
+  display: grid;
+}
+.post {
+  display: grid;
+}
+
+.messages {
+  height: 70px;
+
+}
+
+.feed {
+  color: $feedFontColor;
+  font-family: $siteFont;
+}
+
+.update {
+  height:90px;
+}
+button {
+  background-color: black;
+  color: white;
+}
+.homePage{
+  background-color: rgba(255, 255, 255, .6);
+}
